@@ -1,0 +1,167 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif,Serif,Verdana;
+}
+
+.container{
+	width: 95%;
+	margin: 0 auto;
+	border: 0px solid black;
+}
+ .image{
+	margin-top: 100px;
+	text-align: center;
+}
+.image ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 15px;
+	border: 1px solid #f0f0f0;
+    box-shadow: 1px 1px 2px #f0f0f0;
+
+}
+.info{
+	margin-top: 100px;
+	padding-bottom: 50px;
+}
+.heading p{
+	margin-top: 2px;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+.priceInfo p:first-child
+{
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.priceInfo p:last-child{
+	text-align: right;
+    margin-top: -20px;
+    font-size: 14px;
+    color: #6c51fe;
+}
+.selectItem
+{
+	background-color: #d5cdff;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	color: #ffffff;
+}
+
+.selection ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+
+}
+.prescription{
+	background-color: #7860fe;
+	text-align: center;
+	width: 100%;
+	padding: 10px 0;
+	color: #ffffff;
+}
+.delivery{
+	text-align: center;
+	letter-spacing: 3px;
+}
+.delivery p:first-child{
+	font-weight: bold;
+}
+.delivery p:last-child{
+	color: #b5b5b5;
+
+}
+.delivery p:last-child span{
+	font-size: 13px;
+}
+.delivery p i{
+	font-size: 20px;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 495px){
+	.selection ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 8px;
+
+	}
+}
+@media only screen and (max-width: 450px){
+	.container{
+	width: 100%;
+	margin: 0 auto;
+	border: 0px solid black;
+	
+	}
+	.selection ul li{
+	display: block;
+	padding-bottom: 10px;
+	list-style: none;
+	margin-left: 20px;
+}
+.info{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-6 {width: 50%;}
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+.info{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+   .container{
+	width: 100%;
+	margin: 0 auto;
+	border: 0px solid black;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-6 {width: 50%;}
+}
+
+@media only screen and (max-width: 250px) {
+
+	.priceInfo p:last-child{
+	text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c51fe;
+}
+
+}
